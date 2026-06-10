@@ -19,10 +19,10 @@ class DetailedActivity : AppCompatActivity() {
         val stringBuilder = java.lang.StringBuilder()
 
         for (i in 0 until DataManager.itemNames.size) {
-            stringBuilder.append("⛺ Item: ${DataManager.itemNames[i]}\n")
-            stringBuilder.append("📁 Category: ${DataManager.categories[i]}\n")
-            stringBuilder.append("📦 Quantity: ${DataManager.quantities[i]}\n")
-            stringBuilder.append("📝 Notes: ${DataManager.comments[i]}\n")
+            stringBuilder.append("Item: ${DataManager.itemNames[i]}\n")
+            stringBuilder.append("Category: ${DataManager.categories[i]}\n")
+            stringBuilder.append("Quantity: ${DataManager.quantities[i]}\n")
+            stringBuilder.append("Notes: ${DataManager.comments[i]}\n")
             stringBuilder.append("---------------------------\n\n")
         }
 
