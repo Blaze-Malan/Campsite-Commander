@@ -20,22 +20,27 @@ The campsite commander app was created to help outdoor enthusiast to help oragni
 
 ## SplashScreen
 - As requested makes use of a handler and looper to hold onto the screen for 3 seconds before shifting to the main screen
+
 <img width="346" height="771" alt="Image" src="https://github.com/user-attachments/assets/323276db-5c1f-49b7-b6d9-76ddfc5b8433" />
 
 ## MainScreen
 - Displays the number of packed gear and both buttons to take users to the addgear or detailed screen
+  
 <img width="346" height="771" alt="Image" src="https://github.com/user-attachments/assets/67e8e148-c206-45b4-bf42-344d35426fb4" />
 
 ## AddGearScreen
 -Using textview users can input their data with the options taken and sent back to the array
+
 <img width="346" height="771" alt="Image" src="https://github.com/user-attachments/assets/a581c07f-f1a4-49ed-9cf6-e2b5e2e0281c" />
 
 ## DetailedScreen
 -A summary of all the data our users input and formats them using a stringbuilder
+
 <img width="346" height="771" alt="Image" src="https://github.com/user-attachments/assets/dd67ba8a-f9cc-4986-8129-725d1f1f9153" />
 
 ## Proof of Usability
 -Unfortunately the emulator inside AS did not work for me so instead I made use of the github actions and downloaded the app directly onto my phone to bugtest all screenshots provided was proof itself of usability
+
 <img width="346" height="771" alt="Image" src="https://github.com/user-attachments/assets/ac4fd325-5aef-4cad-8126-49e7163d16b3" />
 
 ## Utilization of GitHub
