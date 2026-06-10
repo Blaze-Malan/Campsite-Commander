@@ -25,19 +25,19 @@ class AddGearActivity : AppCompatActivity() {
             val qtyString = etQuantity.text.toString()
             val comments = etComments.text.toString()
 
-            // Requirement: Error Handling
+            //Error handling for strings
             if (name.isBlank() || category.isBlank() || qtyString.isBlank()) {
                 Toast.makeText(this, "Error: Please fill in Name, Category, and Quantity.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
-
+            //error handling for integers
             val qty = qtyString.toIntOrNull()
             if (qty == null || qty <= 0) {
                 Toast.makeText(this, "Error: Quantity must be a valid number greater than 0.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
 
-            // Add to parallel arrays
+            //Sends the user input to the parallel arrays
             DataManager.itemNames.add(name)
             DataManager.categories.add(category)
             DataManager.quantities.add(qty)
@@ -45,7 +45,7 @@ class AddGearActivity : AppCompatActivity() {
 
             Toast.makeText(this, "$name added to your pack!", Toast.LENGTH_SHORT).show()
 
-            // Navigate back to Main Screen
+            //Sends users back to Main Screen
             finish()
         }
     }

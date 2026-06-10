@@ -14,10 +14,11 @@ class SplashActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash)
 
-        //splashscreen
+        //Using the handler lets us hold this activity for the 3 seconds
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            //And this ends the activity so the user cannot return
             finish()
         }, 3000)
 

@@ -16,25 +16,25 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
+        //basic UI
         tvTotalItems = findViewById(R.id.tvTotalItems)
         val btnAddGear = findViewById<Button>(R.id.btnAddGear)
         val btnViewDetailed = findViewById<Button>(R.id.btnViewDetailed)
 
-        //Add Gear
+        //Sends users to the add gear screen
         btnAddGear.setOnClickListener {
             val intent = Intent(this, AddGearActivity::class.java)
             startActivity(intent)
         }
 
-        //navigation to detailed view
+        //Sends users to the detail view screen
         btnViewDetailed.setOnClickListener {
             val intent = Intent(this, DetailedActivity::class.java)
             startActivity(intent)
         }
 
     }
-    //use on resume so totals update automatically
+    //Onresume helps tally the items automatically when users return to the mainscreen
     override fun onResume() {
         super.onResume()
         val total = DataManager.calculateTotalItemsPacked()

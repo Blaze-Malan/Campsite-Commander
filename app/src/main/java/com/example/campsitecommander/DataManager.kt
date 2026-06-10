@@ -1,10 +1,11 @@
 package com.example.campsitecommander
-
+//The arrays we use for most of the app creating an object allows me to use the arrays
+//globally so it saves us time for having to pass each one back and forth for each activity page
 object DataManager {
-    val itemNames = arrayListOf("Tent", "Marshmallows", "Flashlight")
-    val categories = arrayListOf("Shelter", "Food", "Safety")
-    val quantities = arrayListOf (1, 2, 3, 4, 5, 6, 7, 8, 9)
-    val comments = arrayListOf("4-person waterproof", "For S'mores(Mega size)", "Check batteries(AA)")
+    val itemNames = arrayListOf<String>()
+    val categories = arrayListOf<String>()
+    val quantities = arrayListOf<Int>()
+    val comments = arrayListOf<String>()
 
     //Loop for calculating how many items
     fun calculateTotalItemsPacked(): Int{
