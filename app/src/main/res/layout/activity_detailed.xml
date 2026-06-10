@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#1A2E22">
+    <TextView android:id="@+id/tvDetailedHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manifest and Gear Details"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#253E2E"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvGearList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No gear packed yet."
+            android:textColor="#E8F5E9"
+            android:textSize="16sp"
+            android:lineSpacingMultiplier="1.2" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnBackToBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Base"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="#8D6E63" android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</LinearLayout>

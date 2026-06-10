@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:background="#1A2E22" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <TextView
+            android:id="@+id/tvAddGearHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pack New Gear"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name *"
+            android:textColor="#A5D6A7"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etItemName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="e.g., Sleeping Bag"
+            android:textColorHint="#78909C"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category *"
+            android:textColor="#A5D6A7"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etCategory"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="e.g., Bedding, Food, Tools"
+            android:textColorHint="#78909C"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:inputType="text"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity *"
+            android:textColor="#A5D6A7"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="e.g., 2"
+            android:textColorHint="#78909C"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:inputType="number" android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gear Notes / Comments"
+            android:textColor="#A5D6A7"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="52dp"
+            android:hint="e.g., Rated for -5 degrees"
+            android:textColorHint="#78909C"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:layout_marginBottom="40dp" />
+
+        <Button
+            android:id="@+id/btnSaveGear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save to Pack"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:backgroundTint="#4CAF50" android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
